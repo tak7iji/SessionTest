@@ -7,9 +7,13 @@
     href="${pageContext.request.contextPath}/resources/app/css/styles.css">
 </head>
 <body>
-    <div id="sessionData2_wo_fh">
-        <h1>${sessionData2.message}</h1>
-    </div>
+	<c:choose>
+		<c:when test="${param.containsKey('foo')}">
+		    <div id="containsKey">
+		        <h1>OK</h1>
+		    </div>
+		</c:when>
+	</c:choose>
     <a id="back" href="${pageContext.request.contextPath}/welcome/">back</a> 
 </body>
 </html>

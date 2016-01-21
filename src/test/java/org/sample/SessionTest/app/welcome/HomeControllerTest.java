@@ -103,4 +103,22 @@ public class HomeControllerTest extends FunctionTestSupport {
         assertThat(driver.findElement(By.id("sessionData2ClassName_wo_fh2")).getText(),
                 is("Class: org.sample.SessionTest.app.welcome.SessionData2"));
     }
+    
+    @Test
+    public void test03_containsKey() {
+
+        driver.findElement(By.id("containsKey")).click();
+        
+        assertThat(driver.findElement(By.id("containsKey")).getText(),
+                is("OK"));
+    }
+    @Test
+    public void test03_notnull() {
+
+        driver.findElement(By.id("notnull")).click();
+        
+        assertThat(driver.findElement(By.id("notnull")).getText(),
+                is("OK"));
+    }
+ 
 }

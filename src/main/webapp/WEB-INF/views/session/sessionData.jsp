@@ -11,6 +11,6 @@
     <div id="sessionData">
         <h1>${f:h(sessionData.message)}</h1>
     </div>
-    <a id="back" href="${pageContext.request.contextPath}/">back</a> 
+    <a id="back" href="${pageContext.request.contextPath}/welcome/">back</a> 
 </body>
 </html>

@@ -92,5 +92,13 @@ public class HomeController {
     public String sessionData2ClassNameWoFh2() {
     	return "session/sessionData2ClassName_wo_fh2";
     }
+    @RequestMapping("containsKey")
+    public String containsKey() {
+    	return "session/containsKey";
+    }
+    @RequestMapping("notnull")
+    public String notnull() {
+    	return "session/notnull";
+    }
 
 }

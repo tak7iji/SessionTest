@@ -10,6 +10,6 @@
     <div id="sessionData2ClassName2">
         <p>Class: ${f:h(sessionScope['sessionData2'].getClass().getName())}</p>
     </div>
-    <a id="back" href="${pageContext.request.contextPath}/">back</a> 
+    <a id="back" href="${pageContext.request.contextPath}/welcome/">back</a> 
 </body>
 </html>

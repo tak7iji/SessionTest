@@ -8,13 +8,10 @@
 </head>
 <body>
     <div id="wrapper">
-    	<c:choose>
-    		<c:when test="${param.containsKey('foo')}">
-    			<p>No parameter!</p>
-    		</c:when>
-    	</c:choose>
         <p>The time on the server is ${serverTime}.</p>
         <ul>
+        	<li><a id="containsKey" href="${pageContext.request.contextPath}/welcome/containsKey?foo">containsKey</a>        	
+        	<li><a id="notnull" href="${pageContext.request.contextPath}/welcome/notnull?foo">notnull</a>        	
         	<li><a id="sessionData" href="${pageContext.request.contextPath}/welcome/sessionData">f:h(sessionData.message)</a>        	
 	        <li><a id="sessionData_wo_fh" href="${pageContext.request.contextPath}/welcome/sessionData_wo_fh">sessionData.message</a>
     	    <li><a id="sessionData2" href="${pageContext.request.contextPath}/welcome/sessionData2">f:h(sessionData2.message)</a>
