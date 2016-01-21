@@ -21,6 +21,7 @@
         	<li><a id="sessionData2ClassName2" href="${pageContext.request.contextPath}/welcome/sessionData2ClassName2">f:h(sessionScope['sessionData2'].getClass().getName())</a>        	
         	<li><a id="sessionData2ClassName_wo_fh" href="${pageContext.request.contextPath}/welcome/sessionData2ClassName_wo_fh">sessionScope.sessionData2.getClass().getName()</a>        	
         	<li><a id="sessionData2ClassName_wo_fh2" href="${pageContext.request.contextPath}/welcome/sessionData2ClassName_wo_fh2">sessionScope['sessionData2'].getClass().getName()</a>        	
+        	<li><a id="noClassName" href="${pageContext.request.contextPath}/welcome/noClassName">noClassName</a>        	
         </ul>
     </div>
 </body>

@@ -100,5 +100,9 @@ public class HomeController {
     public String notnull() {
     	return "session/notnull";
     }
+    @RequestMapping("noClassName")
+    public String noClassName() {
+    	return "session/noClassName";
+    }
 
 }
