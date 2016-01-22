@@ -15,7 +15,12 @@
     <context:property-placeholder
         location="classpath*:/META-INF/spring/*.properties" />
 
-    <mvc:annotation-driven>
+    <bean id="validator"
+        class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <property name="providerClass" value="org.hibernate.validator.HibernateValidator" />
+    </bean>
+	
+    <mvc:annotation-driven validator="validator">
         <mvc:argument-resolvers>
             <bean
                 class="org.springframework.data.web.PageableHandlerMethodArgumentResolver" />
@@ -24,7 +29,7 @@
         </mvc:argument-resolvers>
     </mvc:annotation-driven>
 
-    <mvc:default-servlet-handler />
+	<mvc:default-servlet-handler/>
 
     <context:component-scan base-package="org.sample.SessionTest.app" />
 

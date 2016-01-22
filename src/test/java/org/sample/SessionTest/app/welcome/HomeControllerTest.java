@@ -71,6 +71,22 @@ public class HomeControllerTest extends FunctionTestSupport {
                 is("Class: org.sample.SessionTest.app.welcome.SessionData"));
     }
     @Test
+    public void test02_sessionDataClassName2() {
+
+        driver.findElement(By.id("sessionDataClassName2")).click();
+        
+        assertThat(driver.findElement(By.id("sessionDataClassName2")).getText(),
+                is("Class:"));
+    }
+    @Test
+    public void test02_sessionDataClassName3() {
+
+        driver.findElement(By.id("sessionDataClassName3")).click();
+        
+        assertThat(driver.findElement(By.id("sessionDataClassName3")).getText(),
+                is("Class:"));
+    }
+    @Test
     public void test02_sessionData2ClassName() {
 
         driver.findElement(By.id("sessionData2ClassName")).click();
@@ -109,6 +125,14 @@ public class HomeControllerTest extends FunctionTestSupport {
         driver.findElement(By.id("noClassName")).click();
         
         assertThat(driver.findElement(By.id("noClassName")).getText(),
+                is("Class:"));
+    }
+    @Test
+    public void test02_noClassName2() {
+
+        driver.findElement(By.id("noClassName2")).click();
+        
+        assertThat(driver.findElement(By.id("noClassName2")).getText(),
                 is("Class:"));
     }
     

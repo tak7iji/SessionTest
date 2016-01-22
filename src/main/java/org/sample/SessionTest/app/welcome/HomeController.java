@@ -76,6 +76,14 @@ public class HomeController {
     public String sessionDataClassName() {
     	return "session/sessionDataClassName";
     }
+    @RequestMapping("sessionDataClassName2")
+    public String sessionDataClassName2() {
+    	return "session/sessionDataClassName2";
+    }
+    @RequestMapping("sessionDataClassName3")
+    public String sessionDataClassName3() {
+    	return "session/sessionDataClassName3";
+    }
     @RequestMapping("sessionData2ClassName")
     public String sessionData2ClassName() {
     	return "session/sessionData2ClassName";
@@ -103,6 +111,10 @@ public class HomeController {
     @RequestMapping("noClassName")
     public String noClassName() {
     	return "session/noClassName";
+    }
+    @RequestMapping("noClassName2")
+    public String noClassName2() {
+    	return "session/noClassName2";
     }
 
 }
