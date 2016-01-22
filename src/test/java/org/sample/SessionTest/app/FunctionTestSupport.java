@@ -28,7 +28,10 @@ import org.junit.Rule;
 import org.junit.rules.TestName;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -224,4 +227,13 @@ public class FunctionTestSupport extends ApplicationObjectSupport {
     protected void onFinished() {
     }
 
+    protected void click(String id) {        
+        WebElement element = driver.findElement(By.id(id));
+        ((JavascriptExecutor) driver).executeScript(
+          "arguments[0].scrollIntoView(true);",
+          element);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("javascript:window.scrollBy(0,-80)");
+        element.click();
+    }
 }

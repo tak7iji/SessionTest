@@ -32,7 +32,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test01_sessionData() {
 
-        driver.findElement(By.id("sessionData")).click();
+        click("sessionData");
         
         assertThat(driver.findElement(By.id("sessionData")).getText(),
                 is("sessionData"));
@@ -40,7 +40,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test01_sessionData_wo_fh() {
 
-        driver.findElement(By.id("sessionData_wo_fh")).click();
+        click("sessionData_wo_fh");
         
         assertThat(driver.findElement(By.id("sessionData_wo_fh")).getText(),
                 is("sessionData"));
@@ -48,7 +48,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test01_sessionData2() {
 
-        driver.findElement(By.id("sessionData2")).click();
+        click("sessionData2");
         
         assertThat(driver.findElement(By.id("sessionData2")).getText(),
                 is("sessionData2"));
@@ -56,7 +56,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test01_sessionData2_wo_fh() {
 
-        driver.findElement(By.id("sessionData2_wo_fh")).click();
+    	click("sessionData2_wo_fh");
         
         assertThat(driver.findElement(By.id("sessionData2_wo_fh")).getText(),
                 is("sessionData2"));
@@ -65,7 +65,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test02_sessionDataClassName() {
 
-        driver.findElement(By.id("sessionDataClassName")).click();
+    	click("sessionDataClassName");
         
         assertThat(driver.findElement(By.id("sessionDataClassName")).getText(),
                 is("Class: org.sample.SessionTest.app.welcome.SessionData"));
@@ -73,7 +73,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test02_sessionDataClassName2() {
 
-        driver.findElement(By.id("sessionDataClassName2")).click();
+    	click("sessionDataClassName2");
         
         assertThat(driver.findElement(By.id("sessionDataClassName2")).getText(),
                 is("Class:"));
@@ -81,7 +81,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test02_sessionDataClassName3() {
 
-        driver.findElement(By.id("sessionDataClassName3")).click();
+    	click("sessionDataClassName3");
         
         assertThat(driver.findElement(By.id("sessionDataClassName3")).getText(),
                 is("Class:"));
@@ -89,7 +89,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test02_sessionData2ClassName() {
 
-        driver.findElement(By.id("sessionData2ClassName")).click();
+    	click("sessionData2ClassName");
         
         assertThat(driver.findElement(By.id("sessionData2ClassName")).getText(),
                 is("Class: org.sample.SessionTest.app.welcome.SessionData2"));
@@ -97,7 +97,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test02_sessionData2ClassName2() {
 
-        driver.findElement(By.id("sessionData2ClassName2")).click();
+    	click("sessionData2ClassName2");
         
         assertThat(driver.findElement(By.id("sessionData2ClassName2")).getText(),
                 is("Class: org.sample.SessionTest.app.welcome.SessionData2"));
@@ -106,7 +106,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test02_sessionData2ClassName_wo_fh() {
 
-        driver.findElement(By.id("sessionData2ClassName_wo_fh")).click();
+    	click("sessionData2ClassName_wo_fh");
         
         assertThat(driver.findElement(By.id("sessionData2ClassName_wo_fh")).getText(),
                 is("Class: org.sample.SessionTest.app.welcome.SessionData2"));
@@ -114,7 +114,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test02_sessionData2ClassName_wo_fh2() {
 
-        driver.findElement(By.id("sessionData2ClassName_wo_fh2")).click();
+    	click("sessionData2ClassName_wo_fh2");
         
         assertThat(driver.findElement(By.id("sessionData2ClassName_wo_fh2")).getText(),
                 is("Class: org.sample.SessionTest.app.welcome.SessionData2"));
@@ -122,7 +122,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test02_noClassName() {
 
-        driver.findElement(By.id("noClassName")).click();
+    	click("noClassName");
         
         assertThat(driver.findElement(By.id("noClassName")).getText(),
                 is("Class:"));
@@ -130,7 +130,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test02_noClassName2() {
 
-        driver.findElement(By.id("noClassName2")).click();
+    	click("noClassName2");
         
         assertThat(driver.findElement(By.id("noClassName2")).getText(),
                 is("Class:"));
@@ -139,7 +139,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test03_containsKey() {
 
-        driver.findElement(By.id("containsKey")).click();
+    	click("containsKey");
         
         assertThat(driver.findElement(By.id("containsKey")).getText(),
                 is("OK"));
@@ -147,7 +147,7 @@ public class HomeControllerTest extends FunctionTestSupport {
     @Test
     public void test03_notnull() {
 
-        driver.findElement(By.id("notnull")).click();
+    	click("notnull");
         
         assertThat(driver.findElement(By.id("notnull")).getText(),
                 is("OK"));

@@ -9,7 +9,6 @@
 <body>
     <div id="wrapper">
         <p>The time on the server is ${serverTime}.</p>
-        <p>${sessionScope}
         <ul>
         	<li><a id="containsKey" href="${pageContext.request.contextPath}/welcome/containsKey?foo">containsKey</a>        	
         	<li><a id="notnull" href="${pageContext.request.contextPath}/welcome/notnull?foo">notnull</a>        	
@@ -27,6 +26,7 @@
         	<li><a id="noClassName" href="${pageContext.request.contextPath}/welcome/noClassName">noClassName</a>        	
         	<li><a id="noClassName2" href="${pageContext.request.contextPath}/welcome/noClassName2">noClassName2</a>        	
         </ul>
+        <p>${sessionScope}
     </div>
 </body>
 </html>
