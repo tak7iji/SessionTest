@@ -30,6 +30,22 @@
     </mvc:annotation-driven>
 
 	<mvc:default-servlet-handler/>
+	
+	<mvc:view-controller path="welcome/sessionData" view-name="session/sessionData"/>
+	<mvc:view-controller path="welcome/sessionData_wo_fh" view-name="session/sessionData_wo_fh"/>
+	<mvc:view-controller path="welcome/sessionData2" view-name="session/sessionData2"/>
+	<mvc:view-controller path="welcome/sessionData2_wo_fh" view-name="session/sessionData2_wo_fh"/>
+	<mvc:view-controller path="welcome/sessionDataClassName" view-name="session/sessionDataClassName"/>
+	<mvc:view-controller path="welcome/sessionDataClassName2" view-name="session/sessionDataClassName2"/>
+	<mvc:view-controller path="welcome/sessionDataClassName3" view-name="session/sessionDataClassName3"/>
+	<mvc:view-controller path="welcome/sessionData2ClassName" view-name="session/sessionData2ClassName"/>
+	<mvc:view-controller path="welcome/sessionData2ClassName2" view-name="session/sessionData2ClassName2"/>
+	<mvc:view-controller path="welcome/sessionData2ClassName_wo_fh" view-name="session/sessionData2ClassName_wo_fh"/>
+	<mvc:view-controller path="welcome/sessionData2ClassName_wo_fh2" view-name="session/sessionData2ClassName_wo_fh2"/>
+	<mvc:view-controller path="welcome/noClassName" view-name="session/noClassName"/>
+	<mvc:view-controller path="welcome/noClassName2" view-name="session/noClassName2"/>
+	<mvc:view-controller path="welcome/containsKey" view-name="param/containsKey"/>
+	<mvc:view-controller path="welcome/notnull" view-name="param/notnull"/>
 
     <context:component-scan base-package="org.sample.SessionTest.app" />
 
